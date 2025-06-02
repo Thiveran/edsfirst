@@ -1,0 +1,44 @@
+.frontimage-wrapper {
+  max-width: 90%;
+  position: relative;
+  left:-28px;
+}
+ 
+.frontimage {
+  position: relative;
+  width: 1250px;
+  left: -27px;
+}
+ 
+.frontimage picture,
+.frontimage img {
+  width: 100%;
+  object-fit: fill;
+  height: auto;
+  display: block;
+}
+ 
+.frontimage .overlay-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(128, 128, 128, 0.7); /* semi-transparent gray */
+  color: black;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  z-index: 1.5;
+  white-space: nowrap;
+  opacity: 0.75;
+  width: 13%;
+  min-height: 2rem; /* or whatever height suits your layout */
+visibility: hidden; /* if empty, hide it but keep space */
+
+}
+
+.frontimage .overlay-text:not(:empty) {
+  visibility: visible;
+  }

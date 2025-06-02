@@ -1,0 +1,29 @@
+.colorwithtext-wrapper {
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  
+}
+ 
+.colorwithtext {
+  width: 1250px;
+  padding-top: 25px;
+  
+  
+}
+ 
+.colorwithtext .colorwithtext-row {
+  display: flex;
+  width: 1200px;
+  margin-left: -32px;
+  margin-right: -16px;
+  margin-top: -34px;
+  min-height: 100px; /* Adjust height as needed */
+  max-height:150px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}

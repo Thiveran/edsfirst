@@ -1,0 +1,82 @@
+/* Scoped and specific styles for the navheader block */
+.navheader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 10000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 10px 20px;
+  margin: 0;
+}
+ 
+/* Flex layout for title and links */
+.navheader.block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+ 
+/* Title styling */
+.navheader-title {
+  font-size: 28px;
+  font-weight: 400;
+  font-family: 'Times New Roman', Times, serif;
+  color: #000;
+  transition: all 0.3s ease;
+}
+ 
+.navheader-title:hover {
+  font-family: Verdana, sans-serif;
+  font-style: italic;
+}
+ 
+/* Navigation links */
+.navheader-links {
+  padding: 0;
+}
+ 
+.navheader-links ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+ 
+.navheader-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  padding: 8px 16px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, font-weight 0.3s ease;
+}
+ 
+.navheader-links a:hover {
+  background-color: gainsboro;
+  font-weight: 700;
+}
+ 
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .navheader.block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+ 
+  .navheader-links ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+ 
+  .navheader-links a {
+    width: 100%;
+    display: block;
+  }
+}
+ 
+ 
