@@ -30,7 +30,7 @@ export default function decorate(block) {
         });
  
         if (match) {
-          const baseUrl = 'https://main--edsfirst--thiveran.aem.page';
+          const baseUrl = 'https://main--edsfirst--thiveran.aem.live';
           window.location.href = `${baseUrl}${match.path}`;
         } else {
           alert('No matching page found.');
