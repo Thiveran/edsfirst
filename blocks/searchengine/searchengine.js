@@ -1,13 +1,10 @@
 export default function decorate(block) {
-    // Create label
-    const label = document.createElement('p');
-    label.textContent = 'Enter the page to search';
- 
+   
     // Create input
     const input = document.createElement('input');
     input.type = 'text';
     input.id = 'searchInput';
-    input.placeholder = 'Enter title or tag';
+    input.placeholder = block.querySelector(':first-child')?.textContent;
  
     // Create button
     const button = document.createElement('button');
@@ -43,7 +40,6 @@ export default function decorate(block) {
  
     // Append elements to block
     block.textContent = ''; // Clear existing content
-    block.appendChild(label);
     block.appendChild(input);
     block.appendChild(button);
   }
