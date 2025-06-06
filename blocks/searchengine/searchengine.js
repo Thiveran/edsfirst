@@ -4,7 +4,8 @@ export default function decorate(block) {
     const input = document.createElement('input');
     input.type = 'text';
     input.id = 'searchInput';
-    input.placeholder = block.querySelector(':first-child')?.textContent;
+    input.placeholder = input.placeholder = block.querySelector(':first-child')?.textContent.trim() || 'Enter title or tag';
+
  
     // Create button
     const button = document.createElement('button');
