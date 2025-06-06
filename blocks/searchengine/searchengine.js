@@ -1,10 +1,13 @@
 export default function decorate(block) {
-    
+    // Create label
+    const label = document.createElement('p');
+    label.textContent = 'Enter the page to search';
+ 
     // Create input
     const input = document.createElement('input');
     input.type = 'text';
     input.id = 'searchInput';
-    input.placeholder = document.createElement('p');
+    input.placeholder = 'Enter title or tag';
  
     // Create button
     const button = document.createElement('button');
