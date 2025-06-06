@@ -1,5 +1,4 @@
 export default function decorate(block) {
-   
     // Create input
     const input = document.createElement('input');
     input.type = 'text';
