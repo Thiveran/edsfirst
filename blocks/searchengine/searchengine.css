@@ -1,35 +1,46 @@
+/* Styling for input field */
 #searchInput {
-    width: 90%;
-    padding: 10px;
-    font-size: 16px;
+    width: 85%; 
+    padding: 12px;
+    font-size: 18px;
     border: 2px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
     outline: none;
-    transition: border-color 0.3s ease;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease-in-out;
 }
 
+/* Input field focus effect */
 #searchInput:focus {
-    border-color: #007bff; /* Highlight when focused */
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    background-color: #fff;
 }
 
+/* Button styling */
 button {
-    margin-top: 10px;
-    padding: 15px 15px;
-    font-size: 20px;
+    margin-top: 12px;
+    padding: 12px 20px;
+    font-size: 18px;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", Arial, sans-serif;
     color: white;
-    background-color: #007bff;
+    background: linear-gradient(135deg, #007bff, #0056b3);
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
 }
 
+/* Button hover effect */
 button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+    background: linear-gradient(135deg, #0056b3, #004085);
+    box-shadow: 0 6px 12px rgba(0, 86, 179, 0.4);
 }
 
+/* Button active click effect */
 button:active {
-    background-color: #004085; /* Even darker when clicked */
+    transform: scale(0.98);
+    background: linear-gradient(135deg, #004085, #002752);
 }
