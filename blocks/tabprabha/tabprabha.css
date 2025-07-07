@@ -1,0 +1,206 @@
+/* Wrapper for all tabs */
+
+.tabs-wrapper {
+
+  width: 100%;
+
+  margin: 2rem auto;
+
+  border: 1px solid #ddd;
+
+  border-radius: 6px;
+
+  overflow: hidden;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* Buttons container */
+
+.tab-buttons {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+
+  border-bottom: 1px solid #ddd;
+
+}
+
+/* Base button styles */
+
+.tab-button {
+
+  all: unset;
+
+  cursor: pointer;
+
+  text-align: center;
+
+  padding: 0.9rem 1rem;
+
+  font-weight: 600;
+
+  font-size: 1rem;
+
+  transition: background 0.2s ease, color 0.2s ease;
+
+}
+
+/* Default (fallback) style */
+
+.tabs-default .tab-button {
+
+  background: #f9f9f9;
+
+  color: #333;
+
+}
+
+.tabs-default .tab-button:hover {
+
+  background: #eaeaea;
+
+}
+
+.tabs-default .tab-button.active {
+
+  background: #ffffff;
+
+  color: #000;
+
+  border-bottom: 2px solid #007acc;
+
+}
+
+/* Classic style */
+
+.tabs-classic .tab-button {
+
+  background: #f2f2f2;
+
+  color: #444;
+
+}
+
+.tabs-classic .tab-button:hover {
+
+  background: #e0e0e0;
+
+}
+
+.tabs-classic .tab-button.active {
+
+  background: #ffffff;
+
+  color: #222;
+
+  border-bottom: 2px solid #444;
+
+}
+
+/* Professional style */
+
+.tabs-professional .tab-button {
+
+  background: #004080;
+
+  color: #f0f0f0;
+
+}
+
+.tabs-professional .tab-button:hover {
+
+  background: #0055aa;
+
+}
+
+.tabs-professional .tab-button.active {
+
+  background: #0066cc;
+
+  color: #fff;
+
+  border-bottom: 2px solid #003366;
+
+}
+
+/* Content container */
+
+.tab-contents {
+
+  padding: 1.5rem;
+
+  background: #fff;
+
+  min-height: 150px;
+
+  transition: opacity 0.3s ease;
+
+}
+
+/* Each tab content */
+
+.tab-content {
+
+  display: none;
+
+}
+
+/* Show active content */
+
+.tab-content.active {
+
+  display: block;
+
+}
+
+/* Optional: smooth fade in */
+
+.tab-content {
+
+  opacity: 0;
+
+}
+
+.tab-content.active {
+
+  opacity: 1;
+
+}
+
+/* Optional: improve readability in content */
+
+.tab-content p {
+
+  margin: 0 0 1em;
+
+  line-height: 1.6;
+
+  color: #333;
+
+}
+
+/* Optional: images inside tab content */
+
+.tab-content img {
+
+  max-width: 100%;
+
+  border-radius: 4px;
+
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 600px) {
+
+  .tab-buttons {
+
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+}
+ 

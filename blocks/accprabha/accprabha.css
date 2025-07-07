@@ -1,0 +1,119 @@
+/* Accordion wrapper */
+.accordion-wrapper {
+ margin: 2rem auto;
+ width: 100%;
+ max-width: 100%;
+}
+/* Main title */
+.accordion-main-title {
+ font-size: 2rem;
+ font-weight: 700;
+ margin: 0 0 1rem 0;
+ padding: 0 1rem;
+ color: #222;
+}
+/* Accordion item */
+.accordion-item {
+ border-top: 1px solid #ddd;
+}
+/* Accordion title button */
+.accordion-title {
+ all: unset;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 97.27%;
+ cursor: pointer;
+ background: #fff;
+ padding: 1.25rem 1rem;
+ font-weight: 600;
+ font-size: 1.1rem;
+ color: #333;
+ transition: background 0.2s ease, color 0.2s ease;
+ min-height: 3.5rem;
+}
+/* Remove default focus/active blue background */
+.accordion-title:focus,
+.accordion-title:active {
+ outline: none;
+ box-shadow: none;
+ background: inherit;
+ color: inherit;
+}
+/* Hover effect */
+.accordion-title:hover {
+ background: #51a3f6;
+ color: #111;
+}
+/* Open state */
+.accordion-item.open .accordion-title {
+ background: #f0f0f0;
+ color: #111;
+}
+/* Arrow span styling */
+.accordion-arrow {
+ display: inline-block;
+ transition: transform 0.3s ease;
+ font-size: 1.2rem;
+ color: #666;
+ margin-left: 1rem;
+}
+/* Rotate arrow when open */
+.accordion-item.open .accordion-arrow {
+ transform: rotate(180deg);
+}
+/* Accordion content container */
+.accordion-content {
+ display: none;
+ padding: 1.5rem 1rem;
+ background: #fafafa;
+ gap: 1.5rem;
+ flex-wrap: wrap;
+ border-top: 1px solid #eee;
+ width: 100%;
+}
+/* Show content when open */
+.accordion-item.open .accordion-content {
+ display: flex;
+}
+/* Columns for content */
+.accordion-left,
+.accordion-right {
+ flex: 1 1 45%;
+ min-width: 250px;
+}
+.accordion-single {
+ flex: 1 1 100%;
+}
+/* Hide empty columns */
+.accordion-left:empty,
+.accordion-right:empty {
+ display: none;
+}
+/* Images styling */
+.accordion-left img,
+.accordion-right img,
+.accordion-single img {
+ max-width: 100%;
+ height: auto;
+ border-radius: 4px;
+}
+/* Text styling */
+.accordion-left p,
+.accordion-right p,
+.accordion-single p {
+ margin: 0 0 0.75em 0;
+ line-height: 1.6;
+ color: #444;
+}
+/* Responsive layout */
+@media (max-width: 768px) {
+ .accordion-content {
+   flex-direction: column;
+ }
+ .accordion-left,
+ .accordion-right,
+ .accordion-single {
+   flex: 1 1 100%;
+ }
+}
